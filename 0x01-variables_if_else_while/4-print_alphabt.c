@@ -2,7 +2,7 @@
 /**
  * main - use putchar to print alphabet sans q+e
  *
- * Return: Always 0 
+ * Return: Always 0
  */
 int main(void)
 {
