@@ -3,6 +3,11 @@
 #include <time.h>
 /* more headers goes there */
 
+/**
+ * main -entry point
+ *
+ * Return: 0 at the end of function
+ */
 /* betty style doc for function main goes there */
 int main(void)
 {
