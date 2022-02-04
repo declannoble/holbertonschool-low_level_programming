@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(void)
+{
+	char Saying[] = "\" Programming is like building a multilingual puzzle";
+	puts(saying);
+	return (0);
+	
+}
