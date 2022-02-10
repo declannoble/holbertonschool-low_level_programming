@@ -3,7 +3,7 @@
 /**
  * more_numbers- print 10 rows of numbers 0-14
  *
- * Return: 0 
+ * Return: 0
  */
 
 void more_numbers(void)
