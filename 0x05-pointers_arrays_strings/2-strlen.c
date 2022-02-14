@@ -3,7 +3,7 @@
  *
  * @s: pointer
  *
- * return : i (string count)
+ * Return: i (string count)
  */
 
 int _strlen(char *s)
