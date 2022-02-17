@@ -2,10 +2,12 @@
 
 /**
  * _strcat - concatenates strings
- * @dest: string
- * @src: string to be copied
  *
- * Return: 0 success
+ * @dest: strings
+ *
+ * @src: string
+ *
+ * Return: Always 0.
  */
 char *_strcat(char *dest, char *src)
 {
