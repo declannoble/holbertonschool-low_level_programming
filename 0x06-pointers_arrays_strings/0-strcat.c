@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates strings
- *
- * @dest: strings
- *
- * @src: string
+ * _strcat - concatenates two strings
+ * @dest: string to copy to
+ * @src: string to be copied
  *
  * Return: Always 0.
  */
