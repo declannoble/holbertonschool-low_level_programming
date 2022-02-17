@@ -17,7 +17,7 @@ int _strlen(char *s)
 }
 
 /**
- * _strncat concatenates strings
+ * _strncat - concatenates strings
  * @dest: pointer to the string to be modified
  * @src: pointer to the string with the string to be copied
  * @n: the number of bytes from src that can be used
