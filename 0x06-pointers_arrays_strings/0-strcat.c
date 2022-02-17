@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat- concatenate 2 stings
- *
+ * _strcat- concatenate 2 sting 
  * @src: string
  *
  * @dest: string
