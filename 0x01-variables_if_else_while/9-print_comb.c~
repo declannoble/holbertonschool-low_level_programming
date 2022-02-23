@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+/**
+ * main - print all possible combinations of single digit numbers
+ *
+ * Return: returns zero
+ */
+
+int main(void)
+{
+  int i;
+
+  i = '0';
+  while (i <= '9')
+    {
+      putchar(i)
+	}
+}
