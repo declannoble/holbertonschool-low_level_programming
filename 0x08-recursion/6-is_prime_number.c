@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * - test_forprime - checks for primenumber
+ * test_forprime - checks for primenumber
  *@n: the given number to check
  *@test: number to test against
  * Return: 0 success
