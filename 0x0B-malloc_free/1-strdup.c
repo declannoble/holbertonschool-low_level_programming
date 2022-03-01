@@ -1,58 +1,49 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-
 /**
- * _strlen- counts number of characters in string
- * @s: string to be counted
+ * _strlen - returns length of string
  *
- * Description: loop to count number of characters in string
- * that is lcated by a pointer
+ * @s: pointer
  *
- * Return: number of characters in string
+ * Return: i (string count)
  */
 
 int _strlen(char *s)
 {
-	int len;
+	int i = 0;
 
-	for (len = 0; *s != '\0'; s++)
-		len++;
-
-	return (len);
+	while (*s != '\0')
+	{
+		i++;
+		s++;
+	}
+	return (i);
 }
-
 /**
- * _strdup- copy a given string to a newly allocated space in memory
- * @str: string to be copied
- *
- * Description: malloc to allocate memory for length of string
- * loop to go through string and copy str to dest
- *
- * Return: Null if value of string is null
- * Null if insufficient memory available
- * a pointer to the duplicated string if success
- */
-
+  * _strdup - return a pointer to the new allocated memory address
+  * @str: given string
+  * Return: return the pointer to new string address
+  */
 char *_strdup(char *str)
 {
-	int index = 0;
-	char *dest;
-	int len;
+	int length;
+	int i;
+	char *dupStr;
 
 	if (str == NULL)
-		return (NULL);
-
-	len = _strlen(str);
-	dest = malloc(sizeof(*str) * (len + 1));
-
-	if (dest == NULL)
-		return (NULL);
-
-	while (index <= len)
 	{
-		dest[index] = str[index];
-		index = index + 1;
+		return (NULL);
 	}
-	return (dest);
+	length = _strlen(str);
+	dupStr = malloc((length + 1) * sizeof(char));
+	if (dupStr == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < length; i++)
+	{
+		dupStr[i] = str[i];
+	}
+	return (dupStr);
+
 }
