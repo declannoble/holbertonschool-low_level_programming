@@ -1,0 +1,1 @@
+task 0 - creates array of chars
