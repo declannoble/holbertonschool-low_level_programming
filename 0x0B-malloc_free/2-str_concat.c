@@ -51,5 +51,5 @@ char *str_concat(char *s1, char *s2)
 		idx1++;
 		idx2++;
 	}
-	return (NULL);
+	return (new);
 }
