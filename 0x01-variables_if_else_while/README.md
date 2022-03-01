@@ -1,0 +1,1 @@
+task 0- printing a script to see if the variable is positive or negative
