@@ -1,0 +1,1 @@
+task 1 -write a function that allocates memory using malloc
