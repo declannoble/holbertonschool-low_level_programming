@@ -1,11 +1,10 @@
-#ifndef DOG_H
-#define DOG_H
-
+#ifndef _DOG_H_
+#define _DOG_H_
 /**
- * struct dog - struct with 3 members
- * @name: pointer to string
- * @age: pointer to float
- * @owner: pointer to string
+ * struct dog - struct
+ * @name: pointer to name (string)
+ * @age: pointer to age (float)
+ * @owner: pointer to owner (string)
  */
 struct dog
 {
@@ -13,15 +12,13 @@ struct dog
 	float age;
 	char *owner;
 };
-
 /**
- * dog_t - Typedef for struct dog
+ * typedef dog_t - defines new struct
  */
-typedef struct dog dog_t
-
+typedef struct dog dog_t;
+int _putchar(char c);
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
-
 #endif
