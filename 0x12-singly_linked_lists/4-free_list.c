@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <sring.h>
+#include <sting.h>
 
 /**
  * free_list - frees a list
