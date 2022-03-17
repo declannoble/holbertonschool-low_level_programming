@@ -1,6 +1,8 @@
 #include "lists.h"
 #include <string.h>
 #include <stdlib.h>
+#include <string.h>
+
 /**
  * _strlen - find length of a string
  *@str: string to check
@@ -8,12 +10,14 @@
  */
 int _strlen(const char *str)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
-		return (i);
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
-
 /**
  *add_node - adds new node at beginning of list_t
  *@head: head node
@@ -21,22 +25,24 @@ int _strlen(const char *str)
  *Return: address of new element or NULL if failure occurs
  */
 
-list_t *add_node(list_t **head, const char *str);
+list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new = malloc(sizeof(list_t));
 
-	if (new = NULL)
+	if (new == NULL)
 		return (NULL);
 	if (str == NULL)
 		return (NULL);
 
-	new->str = _strlen(str);
-	new->len = strdup(str);
+	new->str = strdup(str);
+	new->len = _strlen(str);
 
 	if (*head == NULL)
 		new->next = NULL;
 	else
+	{
 		new->next = (*head);
+	}
 	(*head) = new;
 
 	return (new);
