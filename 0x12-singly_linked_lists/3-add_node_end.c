@@ -48,7 +48,7 @@ list_t *add_node(list_t **head, const char *str)
 	return (new);
 }
 /**
- *add_node_end
+ *add_node_end - adds node to the end of a linked list
  *@head: head node
  *@str: string
  *Return: address of element
@@ -76,9 +76,13 @@ list_t *add_node_end(list_t **head, const char *str)
 	else
 	{
 		list_t *last = *head;
+
 		while (last->next != NULL)
+		{
 			last = last->next;
-		last->next = new;
-        }
+			last->next = new;
+		}
+
+	}
 	return (new);
 }
