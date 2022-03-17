@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <sring.h>
+
 /**
  * free_list - frees a list
  * @head: pointer
@@ -12,7 +14,7 @@ void free_list(list_t *head)
 	{
 		dec = head;
 		head = head->next;
-		free (dec->str);
-		free (dec);
+		free(dec->str);
+		free(dec);
 	}
 }
