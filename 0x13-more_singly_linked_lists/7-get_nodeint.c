@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *get_nodeint__index- deletes nth node of linked list
+ *get_nodeint_at_index- deletes nth node of linked list
  *@head: pointer to head node
  *@index: index of nodes
  *Return: NULL if non existant, otherwise return node.
