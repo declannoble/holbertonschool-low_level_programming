@@ -8,15 +8,15 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int result = 0;
-	/* if index is larger than 32 bit error occurs */
-	if (index > 31)
+	/* if index is larger than 64 bit error occurs */
+	if (index > 63)
 		return (-1);
 
-	result = n << index;
+	result = n >> index;
 
 	if (result & 1)
 	{
-		return (0);
+		return (1);
 	}
-	return (result);
+	return (0);
 }
