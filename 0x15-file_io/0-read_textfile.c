@@ -36,7 +36,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	bytwrite = write(STDOUT_FILENO, buffer, bytread);
 
-	if (bytwrite == -1)
+	if (bytread != bytwrite || bytwrite == -1)
 	{
 		free (buffer);
 		return (0);
