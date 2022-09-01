@@ -1,5 +1,13 @@
 #include "search_algos.h"
 
+/**
+ * binary_search - searches for given value in an array via binary algorithm
+ * @array: pointer to start of array
+ * @size: size of the array
+ * @value: given value to search for
+ * Return: -1 if array is NULL, given value otherwise
+ */
+
 int binary_search(int *array, size_t size, int value)
 {
 	int right = size - 1;
